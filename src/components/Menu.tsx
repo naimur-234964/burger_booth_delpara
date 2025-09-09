@@ -14,8 +14,8 @@ const categories = [
   { name: 'Burgers', image: hamburgerImage },
   { name: 'Pasta', image: pastaImage },
   { name: 'Chowmein', image: chowmeinImage },
-  { name: 'Meat Box', image: meatBoxImage }, // Placeholder
-  { name: 'Sides', image: sidesImage }, // Placeholder
+  { name: 'Meat Box', image: meatBoxImage },
+  { name: 'Sides', image: sidesImage },
   { name: 'Drinks', image: drinksImage },
   { name: 'Milkshakes', image: milkshakeImage },
   { name: 'Beverages', image: beveragesImage },

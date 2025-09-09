@@ -11,11 +11,17 @@ const About = () => {
           </div>
           <div className="about-text">
             <h2 className="text-4xl font-bold text-text-light mb-4">About Us</h2>
-            <p className="text-text-light/80 mb-4">
-              We are a family-owned business that has been serving the best burgers in town for over 20 years. Our mission is to provide our customers with high-quality food and a great dining experience.
+            <p className="text-text-light mb-4">
+              We are a family-owned business that has been serving the best burgers in town for over 5 years. Our mission is to provide our customers with high-quality food and a great dining experience.
             </p>
-            <p className="text-text-light/80">
-              We use only the freshest ingredients, and our burgers are made with 100% beef. We also offer a variety of other menu items, including salads, sandwiches, and milkshakes.
+            <p className="text-text-light mb-4">
+              Our mission is simple: to provide every customer with high-quality food, friendly service, and a dining experience that feels like home. We believe that good food brings people closer, and we put care and passion into every bite.
+            </p>
+            <p className="text-text-light mb-4">
+              We use only the freshest, locally sourced ingredients, and our burgers are crafted with 100% premium beef, seasoned to perfection. Alongside our signature burgers, you’ll find a variety of menu items to satisfy every craving — from crisp, fresh salads to hearty sandwiches and creamy, hand-spun milkshakes.
+            </p>
+            <p className="text-text-light">
+              Whether you’re stopping by for a quick lunch, a family dinner, or a late-night snack, we’re here to serve you with the same dedication and love that has kept our doors open and our customers coming back for years.
             </p>
           </div>
         </div>

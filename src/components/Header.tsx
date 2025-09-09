@@ -27,14 +27,13 @@ const Header = () => {
   }, []);
 
   return (
-    <header 
-      className={`py-4 px-8 flex items-center justify-between transition-all duration-300 ${
-        isScrolled 
-          ? 'fixed top-0 left-0 right-0 bg-secondary-bg bg-opacity-70 backdrop-blur-md z-50' 
+    <header
+      className={`py-4 px-8 md:px-12 lg:px-32 flex items-center justify-between transition-all duration-300 ${isScrolled
+          ? 'fixed top-0 left-0 right-0 bg-secondary-bg bg-opacity-70 backdrop-blur-md z-50'
           : 'relative bg-secondary-bg'
-      }`}>
+        }`}>
       <Logo />
-      <nav className="hidden md:flex items-center space-x-8">
+      <nav className="hidden md:flex items-center space-x-8 font-bold">
         <Link to="/" className="text-text-light hover:text-accent">Home</Link>
         <Link to="/menu" className="text-text-light hover:text-accent">Menu</Link>
         <Link to="/#about" className="text-text-light hover:text-accent">About</Link>
@@ -52,7 +51,7 @@ const Header = () => {
         )}
       </button>
       {isMenuOpen && (
-        <nav className="absolute top-16 left-0 w-full bg-secondary-bg md:hidden z-10">
+        <nav className="absolute top-16 left-0 w-full bg-secondary-bg md:hidden z-10 font-bold">
           <Link to="/" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Home</Link>
           <Link to="/menu" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Menu</Link>
           <Link to="/#about" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">About</Link>
