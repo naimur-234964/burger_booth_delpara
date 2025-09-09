@@ -17,7 +17,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, image }) 
         <p className="text-text-light/80 mb-4">{description}</p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-accent">৳ {price.toFixed(2)}</span>
-          <button className="bg-primary-bg text-white font-bold py-2 px-4 rounded-md hover:bg-accent/90 transition duration-300">Add to Cart</button>
+          <button className="bg-primary-bg text-white font-bold py-2 px-4 rounded-md hover:bg-accent/90 transition duration-300" onClick={() => (window.location.href = 'tel:+8801842424541')}>Order Now</button>
         </div>
       </div>
     </div>
