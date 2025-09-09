@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const Header = () => {
@@ -34,10 +35,10 @@ const Header = () => {
       }`}>
       <Logo />
       <nav className="hidden md:flex items-center space-x-8">
-        <a href="#" className="text-text-light hover:text-accent">Home</a>
-        <a href="#" className="text-text-light hover:text-accent">Menu</a>
-        <a href="#" className="text-text-light hover:text-accent">About</a>
-        <a href="#" className="text-text-light hover:text-accent">Contact</a>
+        <Link to="/" className="text-text-light hover:text-accent">Home</Link>
+        <Link to="/menu" className="text-text-light hover:text-accent">Menu</Link>
+        <Link to="/#about" className="text-text-light hover:text-accent">About</Link>
+        <Link to="/#contact" className="text-text-light hover:text-accent">Contact</Link>
       </nav>
       <button className="md:hidden text-text-light" onClick={toggleMenu}>
         {isMenuOpen ? (
@@ -52,10 +53,10 @@ const Header = () => {
       </button>
       {isMenuOpen && (
         <nav className="absolute top-16 left-0 w-full bg-secondary-bg md:hidden z-10">
-          <a href="#" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Home</a>
-          <a href="#" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Menu</a>
-          <a href="#" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">About</a>
-          <a href="#" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Contact</a>
+          <Link to="/" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Home</Link>
+          <Link to="/menu" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Menu</Link>
+          <Link to="/#about" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">About</Link>
+          <Link to="/#contact" className="block py-2 px-4 text-text-light hover:bg-primary-bg text-center">Contact</Link>
         </nav>
       )}
     </header>
