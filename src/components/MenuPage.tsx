@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import sr from '../scroll-reveal';
 import MenuItem, { MenuItemProps } from './MenuItem';
 import chotoNobabImage from '../assets/choto_nobab.jpg';
 import bbqImage from '../assets/bbq.jpg';
@@ -89,6 +90,11 @@ const allMenuItems: MenuItemProps[] = [
 ];
 
 const MenuPage = () => {
+  useEffect(() => {
+    sr.reveal('.category-title', { origin: 'top', delay: 100 });
+    sr.reveal('.menu-item', { origin: 'bottom', interval: 200 });
+  }, []);
+
   const categories = Array.from(new Set(allMenuItems.map(item => item.category)));
 
   return (

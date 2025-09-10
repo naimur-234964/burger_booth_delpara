@@ -20,8 +20,7 @@ function App() {
     sr.reveal('.contact-form', { origin: 'left', delay: 200 });
     sr.reveal('.contact-info', { origin: 'right', delay: 300 });
 
-    sr.reveal('.category-title', { origin: 'top', delay: 100 });
-    sr.reveal('.menu-item', { origin: 'bottom', interval: 200 });
+    
   }, []);
 
   return (
