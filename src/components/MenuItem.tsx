@@ -10,14 +10,14 @@ export interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, image }) => {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden menu-item">
-      <img src={image} alt={name} className="w-full h-48 object-cover" />
+    <div className="overflow-hidden transition duration-300 rounded-lg shadow-xl bg menu-item hover:scale-105 hover:shadow-2xl">
+      <img src={image} alt={name} className="object-contain w-full h-96" />
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-text-light mb-2">{name}</h3>
-        <p className="text-text-light/80 mb-4">{description}</p>
+        <h3 className="mb-2 text-2xl font-bold text-text-light">{name}</h3>
+        <p className="mb-4 text-text-light/80">{description}</p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-accent">৳ {price.toFixed(2)}</span>
-          <button className="bg-primary-bg text-white font-bold py-2 px-4 rounded-md hover:bg-accent/90 transition duration-300" onClick={() => (window.location.href = 'tel:+8801842424541')}>Order Now</button>
+          <button className="px-4 py-2 font-bold text-white transition duration-300 rounded-md bg-primary-bg hover:bg-accent/90" onClick={() => (window.location.href = 'tel:+8801842424541')}>Order Now</button>
         </div>
       </div>
     </div>
